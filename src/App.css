@@ -4,12 +4,12 @@
     height: 99.4vh;
     width: auto;
     border: 3px solid black;
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center; */
+    /* align-content: center; */
 }
 
 .Dog-Form {
     border: 3px solid red;
-    justify-content: center;
-    align-items: center;
+    height: 30em;
+    width: 50em;
 }
