@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Row, Button, Form, FormGroup, Label, Input, FormText, CustomInput } from 'reactstrap';
 
 
 const DogForm = () => {
@@ -6,16 +7,37 @@ const DogForm = () => {
 
     return (
         <div className="Dog-Form" >
-            <form>
-                <label>Name</label>
-                <input type='text'></input>
-                <label>Breed</label>
-                <input type='text'></input>
-                <label>Birthday</label>
-                <input type='text'></input>
-                
-
-            </form>
+            <Form>
+                <Row form>
+                    <Col md={6}>
+                        <FormGroup>
+                            <Label>Name:</Label>
+                            <Input type="text" placeholder="Pet's name" />
+                        </FormGroup>
+                    </Col>
+                    <Col md={6}>
+                        <FormGroup>
+                            <Label>Image:</Label>
+                            {/* Input tag messed with form layout */}
+                            <CustomInput type="file" name='Image' />
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Row form>
+                    <Col md={6}>
+                        <FormGroup>
+                            <Label>Name:</Label>
+                            <Input type="text" placeholder="Pet's name" />
+                        </FormGroup>
+                    </Col>
+                    <Col md={6}>
+                        <FormGroup>
+                            <Label>Breed:</Label>
+                            <Input type="text" placeholder="Pet's breed" />
+                        </FormGroup>
+                    </Col>
+                </Row>
+            </Form>
         </div >
     )
 }
